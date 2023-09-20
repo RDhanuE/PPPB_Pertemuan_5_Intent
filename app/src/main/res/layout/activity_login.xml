@@ -1,0 +1,194 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Page"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:text="Register"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/poppins"
+        />
+
+    <EditText
+        android:background="@drawable/form_bg"
+        android:textColorHint="#828282"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:paddingStart="42dp"
+        android:hint="Username"
+        android:layout_margin="18dp"
+        android:textSize="20dp"
+        android:id="@+id/name_edit_txt"
+        />
+
+    <EditText
+        android:background="@drawable/form_bg"
+        android:textColorHint="#828282"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:paddingStart="42dp"
+        android:hint="Number"
+        android:layout_margin="18dp"
+        android:textSize="20dp"
+        android:id="@+id/number_edit_txt"
+        />
+
+    <EditText
+        android:background="@drawable/form_bg"
+        android:textColorHint="#828282"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:paddingStart="42dp"
+        android:hint="Email"
+        android:layout_margin="18dp"
+        android:textSize="20dp"
+        android:id="@+id/email_edit_txt"
+        />
+
+    <EditText
+        android:background="@drawable/form_bg"
+        android:textColorHint="#828282"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:paddingStart="42dp"
+        android:hint="Password"
+        android:layout_margin="18dp"
+        android:textSize="20dp"
+        android:id="@+id/password_edit_txt"
+        android:inputType="textPassword"
+        />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="8dp"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ToC"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="By checking the box, you agree to our "
+                android:textSize="11sp"
+                android:fontFamily="@font/poppinm"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms "
+                android:textSize="11sp"
+                android:fontFamily="@font/poppinm"
+                android:clickable="true"
+                android:textColor="#525BFF"
+                android:id="@+id/terms"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="and "
+                android:textSize="11sp"
+                android:fontFamily="@font/poppinm"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="conditions"
+                android:textSize="11sp"
+                android:fontFamily="@font/poppinm"
+                android:clickable="true"
+                android:textColor="#525BFF"
+                android:id="@+id/conditions"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/white"
+            android:padding="10dp"
+            android:hint="Register"
+            android:layout_marginTop="36dp"
+            android:layout_marginHorizontal="18dp"
+            android:textSize="20dp"
+            android:id="@+id/to_second_page"
+            android:background="@drawable/button_bg"
+            android:fontFamily="@font/poppinm"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginVertical="12dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account ?"
+                android:textSize="14dp"
+                android:fontFamily="@font/poppinm"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Log In"
+                android:textSize="14dp"
+                android:clickable="true"
+                android:textColor="#525BFF"
+                android:fontFamily="@font/poppinm"
+                android:id="@+id/log_in"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
